@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Life Algorithms</title>
+    <link>https://biocodehub.github.io/</link>
+    <description>Recent content on Life Algorithms</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 22 Sep 2024 20:46:53 +0800</lastBuildDate>
+    <atom:link href="https://biocodehub.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VSCode &amp; Jupyter Notebook</title>
+      <link>https://biocodehub.github.io/posts/setup_vscode_jupyter/</link>
+      <pubDate>Sun, 22 Sep 2024 20:46:53 +0800</pubDate>
+      <guid>https://biocodehub.github.io/posts/setup_vscode_jupyter/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;install-visual-studio-code--set-up-jupyter-notebook-in-vscode&#34;&gt;Install Visual Studio Code &amp;amp; Set Up Jupyter Notebook in VSCode&lt;/h2&gt;&#xA;&lt;h3 id=&#34;step-1-install-visual-studio-code&#34;&gt;Step 1: Install Visual Studio Code&lt;/h3&gt;&#xA;&lt;p&gt;Go to the &lt;a href=&#34;https://code.visualstudio.com&#34;&gt;official VSCode website&lt;/a&gt; and download the installer for your operating system.&lt;/p&gt;&#xA;&lt;h3 id=&#34;step-2-install-the-jupyter-and-python-extensions&#34;&gt;Step 2: Install the Jupyter and Python Extensions&lt;/h3&gt;&#xA;&lt;h4 id=&#34;1-install-the-jupyter-extension-&#34;&gt;1. Install the Jupyter Extension :&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Click on the &lt;strong&gt;Extensions&lt;/strong&gt; icon on the left sidebar in VSCode (or press &lt;code&gt;Cmd+Shift+X&lt;/code&gt;).&lt;/li&gt;&#xA;&lt;li&gt;Search for &amp;ldquo;Jupyter&amp;rdquo; in the Extensions Marketplace.&lt;/li&gt;&#xA;&lt;li&gt;Click Install next to the &amp;ldquo;Jupyter&amp;rdquo; extension.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;step-3-open-or-create-a-jupyter-notebook-in-vscode&#34;&gt;Step 3: Open or Create a Jupyter Notebook in VSCode&lt;/h3&gt;&#xA;&lt;h4 id=&#34;1-open-the-command-palette-&#34;&gt;1. Open the Command Palette :&lt;/h4&gt;&#xA;&lt;p&gt;Press &lt;code&gt;Cmd+Shift+P&lt;/code&gt; (on macOS) or &lt;code&gt;Ctrl+Shift+P&lt;/code&gt; (on Windows/Linux) to open the Command Palette in VSCode.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Setting Up Julia Environment</title>
+      <link>https://biocodehub.github.io/posts/setting-up-julia-environment/</link>
+      <pubDate>Fri, 20 Sep 2024 22:11:24 +0800</pubDate>
+      <guid>https://biocodehub.github.io/posts/setting-up-julia-environment/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;install-julia&#34;&gt;Install Julia&lt;/h2&gt;&#xA;&lt;h3 id=&#34;step-1-download--install-julia&#34;&gt;Step 1: Download &amp;amp; Install Julia&lt;/h3&gt;&#xA;&lt;p&gt;Visit the official &lt;a href=&#34;https://julialang.org/downloads/&#34;&gt;Julia website&lt;/a&gt; and download the installer for your operating system.&lt;/p&gt;&#xA;&lt;h3 id=&#34;step-2-install-julia-extension-for-visual-studio-code&#34;&gt;Step 2: Install Julia Extension for Visual Studio Code&lt;/h3&gt;&#xA;&lt;p&gt;To use Julia in VSCode, you need to install the Julia extension. Please follow the &lt;a href=&#34;https://code.visualstudio.com/docs/languages/julia&#34;&gt;official website&lt;/a&gt; for installation instructions.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;environment-setup-in-vscode---mac-version&#34;&gt;Environment Setup in VSCode - Mac Version&lt;/h2&gt;&#xA;&lt;p&gt;Assuming VSCode is already installed, the process for setting up the Julia environment is as follows:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Setting Up Python Environment</title>
+      <link>https://biocodehub.github.io/posts/my-first-post/</link>
+      <pubDate>Fri, 20 Sep 2024 21:47:27 +0800</pubDate>
+      <guid>https://biocodehub.github.io/posts/my-first-post/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;install-python&#34;&gt;Install Python&lt;/h2&gt;&#xA;&lt;h3 id=&#34;step-1-download--install-python&#34;&gt;Step 1: Download &amp;amp; Install Python&lt;/h3&gt;&#xA;&lt;p&gt;Visit the official &lt;a href=&#34;https://www.python.org/downloads/&#34;&gt;Python website&lt;/a&gt; and download the installer for your operating system.&lt;/p&gt;&#xA;&lt;h3 id=&#34;step-2-install-python-extension-for-visual-studio-code&#34;&gt;Step 2: Install Python Extension for Visual Studio Code&lt;/h3&gt;&#xA;&lt;p&gt;To use Python in VSCode, you need to install the Python extension. Please follow the &lt;a href=&#34;https://learn.microsoft.com/en-us/training/modules/python-install-vscode/5-exercise-install-python-extension?pivots=macos&#34;&gt;official website&lt;/a&gt; for installation instructions.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;environment-setup-in-vscode---mac-version&#34;&gt;Environment Setup in VSCode - Mac Version&lt;/h2&gt;&#xA;&lt;p&gt;Assuming VSCode is already installed, the process for setting up the Python environment is as follows:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

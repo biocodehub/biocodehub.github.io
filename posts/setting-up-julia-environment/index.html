@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8" />
+
+  <title>Setting Up Julia Environment - Life Algorithms</title>
+
+
+  <meta name="author" content="Bio Code Hub"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<link rel="stylesheet" href="https://biocodehub.github.io/css/latex.css" />
+<link rel="stylesheet" href="https://biocodehub.github.io/css/main.css" />
+<script id="MathJax-script" async src="https://biocodehub.github.io/js/tex-mml-chtml.js"></script>
+<meta name="generator" content="Hugo 0.134.3"><body class="latex-dark">
+
+
+
+
+
+
+<header>
+  <nav class="navbar">
+  <div class="nav">
+    
+
+    <ul class="nav-links">
+      
+    </ul>
+  </div>
+</nav>
+  <div class="intro-header">
+    <div class="container">
+      <div class="posts-heading">
+        
+          <h1>Setting Up Julia Environment</h1>
+          
+        
+      </div>
+    </div>
+  </div>
+</header>
+<div id="content">
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      <div class="postmeta">
+        
+        <span class="meta-post">
+    
+  
+    <i class="fa fa-user"></i> Author: David Feng
+  
+
+  <br>
+  <i class="fa fa-calendar-alt"></i>
+  Sep 20, 2024
+  
+</span>
+      </div>
+      <br>
+      
+    <hr>
+<h2 id="install-julia">Install Julia</h2>
+<h3 id="step-1-download--install-julia">Step 1: Download &amp; Install Julia</h3>
+<p>Visit the official <a href="https://julialang.org/downloads/">Julia website</a> and download the installer for your operating system.</p>
+<h3 id="step-2-install-julia-extension-for-visual-studio-code">Step 2: Install Julia Extension for Visual Studio Code</h3>
+<p>To use Julia in VSCode, you need to install the Julia extension. Please follow the <a href="https://code.visualstudio.com/docs/languages/julia">official website</a> for installation instructions.</p>
+<hr>
+<h2 id="environment-setup-in-vscode---mac-version">Environment Setup in VSCode - Mac Version</h2>
+<p>Assuming VSCode is already installed, the process for setting up the Julia environment is as follows:</p>
+<ul>
+<li>Confirm the virtual environment path</li>
+<li>Create Julia Virtual Environment</li>
+<li>Install <code>IJulia</code></li>
+<li>Add the virtual environment as a Jupyter kernel</li>
+<li>Confirm the kernel has been successfully added</li>
+<li>Select the kernel in Jupyter Notebook</li>
+</ul>
+<h2 id="detail-explanation">Detail explanation</h2>
+<h3 id="1-confirm-the-virtual-environment-path">1. Confirm the virtual Environment Path</h3>
+<p>If your virtual environment is named <code>env_bio</code> and is located in the project directory, the path to the virtual environment might be :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Input</span>
+</span></span><span style="display:flex;"><span>pwd
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Output</span>
+</span></span><span style="display:flex;"><span>/path/to/your/project/env_bio
+</span></span></code></pre></div><h3 id="2-create-julia-virtual-environment">2. Create Julia Virtual Environment</h3>
+<p>In the project directory, start the Julia REPL, enter Pkg mode, and create a new virtual environment :</p>
+<p>Start Julia REPL by typing the following in your terminal :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Input</span>
+</span></span><span style="display:flex;"><span>julia
+</span></span></code></pre></div><p>Once inside Julia REPL, enter Pkg mode by typing:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span><span style="color:#75715e"># Input</span>
+</span></span><span style="display:flex;"><span>]
+</span></span></code></pre></div><p>In Pkg mode, create a new virtual environment:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span><span style="color:#75715e"># Input</span>
+</span></span><span style="display:flex;"><span>activate <span style="color:#f92672">.</span>
+</span></span></code></pre></div><p>This will create <code>Project.toml</code> and <code>Manifest.toml</code> files in the current directory and activate the virtual environment.</p>
+<h3 id="3-install-ijulia">3. Install <code>IJulia</code></h3>
+<p>Next, install the required packages for your project. For example, install IJulia and any other project-specific packages :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span><span style="color:#75715e"># Input</span>
+</span></span><span style="display:flex;"><span>add IJulia
+</span></span><span style="display:flex;"><span>add YourOtherPackages
+</span></span></code></pre></div><p>After installation, the virtual environment is ready.</p>
+<h3 id="4-add-the-virtual-environment-as-a-jupyter-kernel">4. Add the virtual environment as a Jupyter kernel</h3>
+<p>After creating the virtual environment, you need to register the Julia kernel with Jupyter Notebook.</p>
+<p>Run the following command in the Julia REPL to install the kernel :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span><span style="color:#75715e"># Input</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> IJulia
+</span></span><span style="display:flex;"><span>IJulia<span style="color:#f92672">.</span>installkernel(<span style="color:#e6db74">&#34;XXXX-Kernel&#34;</span>)
+</span></span></code></pre></div><p><code>XXXX-Kernel</code> is the name you want to assign to this kernel. It will appear in the Jupyter Notebook kernel list.</p>
+<h3 id="5-confirm-the-kernel-has-been-successfully-added">5. Confirm the kernel has been successfully added</h3>
+<p>You can confirm the kernel has been added to Jupyter by listing all available kernels :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Input</span>
+</span></span><span style="display:flex;"><span>jupyter kernelspec list
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Output</span>
+</span></span><span style="display:flex;"><span>Available kernels:
+</span></span><span style="display:flex;"><span>  XXXX-Kernel-1.10     /Users/username/Library/Jupyter/kernels/XXXX-Kernel-1.10
+</span></span></code></pre></div><h3 id="6-select-the-kernel-in-jupyter-notebook">6. Select the kernel in Jupyter Notebook</h3>
+<ul>
+<li>Open VSCode and open a Jupyter Notebook file (<code>.ipynb</code>).</li>
+<li>Click the Kernel dropdown at the top of the Notebook page.</li>
+<li>Select the newly added &lsquo;XXXX-Kernel&rsquo; kernel from the dropdown menu.</li>
+</ul>
+<hr>
+<h2 id="remove-specified-kernel">Remove Specified Kernel</h2>
+<p>To remove a Julia virtual environment and its corresponding Jupyter kernel, follow these steps :</p>
+<h3 id="1-list-all-available-kernels">1. List all available kernels</h3>
+<p>First, use the following command to list all installed Jupyter kernels and identify which one you want to remove :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Input</span>
+</span></span><span style="display:flex;"><span>jupyter kernelspec list
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Output</span>
+</span></span><span style="display:flex;"><span>Available kernels:
+</span></span><span style="display:flex;"><span>  XXXX-Kernel-1.10     /Users/username/Library/Jupyter/kernels/XXXX-Kernel-1.10
+</span></span></code></pre></div><h3 id="2-remove-the-jupyter-kernel">2. Remove the Jupyter kernel</h3>
+<p>After identifying the kernel, proceed to remove it. Start by opening Julia :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Input</span>
+</span></span><span style="display:flex;"><span>julia
+</span></span></code></pre></div><p>Inside Julia REPL, use the <code>rm</code> function to remove the kernel folder. For example, if the kernel is located in /Users/username/Library/Jupyter/kernels/XXXX-Kernel-1.10, use the following command :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span><span style="color:#75715e"># Input</span>
+</span></span><span style="display:flex;"><span>rm(<span style="color:#e6db74">&#34;/Users/username/Library/Jupyter/kernels/XXXX-Kernel-1.10&#34;</span>, recursive<span style="color:#f92672">=</span>true, force<span style="color:#f92672">=</span>true)
+</span></span></code></pre></div><p>This will remove the kernel folder, effectively unregistering the Julia environment from Jupyter.</p>
+<p>To ensure the kernel was successfully removed, run jupyter kernelspec list again :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Input</span>
+</span></span><span style="display:flex;"><span>jupyter kernelspec list
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Output</span>
+</span></span><span style="display:flex;"><span>Available kernels:
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">#(No more  XXXX-Kernel-1.10)     </span>
+</span></span></code></pre></div>
+
+
+      
+    </article>
+    
+  </div>
+
+        </div><footer>
+  <div class="container">
+    <p class="credits copyright">
+      <p class="credits theme-by">
+        
+        
+        
+        <a href="https://biocodehub.github.io/">Life Algorithms</a>,
+        
+        &copy;
+        2024
+        <a href="https://biocodehub.github.io/about/">Bio Code Hub</a>
+      </p>
+  </div>
+</footer></body>
+</html>
